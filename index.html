@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Mandelbrot Set</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <h1>Mandelbrot Set</h1>
+    <div class="canvas-container">
+      <canvas id="canvas" width="400px" height="400px"></canvas>
+    </div>
+
+
+
+    <div class="button-container">
+      <button class="increase" id="increase">Zoom In +</button>
+      <button class="decrease" id="decrease">Zoom Out -</button>
+      <button class="left" id="left">Left <=</button>
+      <button class="right" id="right">Right =></button>
+      <button class="up" id="up">Up ^</button>
+      <button class="down" id="down">Down v</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/12.3.0/math.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

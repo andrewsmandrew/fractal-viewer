@@ -1,0 +1,51 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+canvas {
+  border: 1px solid black;
+}
+
+.canvas-container {
+  display: flex;
+  justify-content: center;
+}
+
+.increase {
+  grid-area: increase;
+}
+.decrease {
+  grid-area: decrease;
+}
+.left {
+  grid-area: left;
+}
+.right {
+  grid-area: right;
+}
+.up {
+  grid-area: up;
+}
+.down {
+  grid-area: down;
+}
+
+.button-container {
+  width: 200px;
+  display: grid;
+  margin: 1em auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  grid-template-areas:
+    "increase increase increase decrease decrease decrease"
+    ". . up up . ."
+    "left left . . right right"
+    ". . down down . .";
+
+}
+
+h1 {
+  text-align: center;
+}
+
